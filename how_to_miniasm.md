@@ -9,5 +9,5 @@ first minimap2
 
 then miniasm
 ```
-./miniasm -f ../minimap_output/minimap.paf.gz > ./miniasm_assembly/miniasm.gfa
+./miniasm -f ../miniasm_assembly/results/Dere_14062023_PAO93669_sorted_150x.fastq.gz ../minimap_output/minimap.paf.gz > ./miniasm_assembly/miniasm.gfa
 ```
