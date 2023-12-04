@@ -17,3 +17,7 @@ date
 ../miniasm/./miniasm -f /results/Dere_14062023_PAO93669_sorted_150x.fastq.gz /home/sarah/minimap_output/minimap.paf.gz > miniasm.gfa
 date
 ```
+then create a .fasta file from the .gfa file
+```
+awk '/^S/{print ">"$2"\n"$3}' miniasm.gfa > miniasm.fasta
+```
