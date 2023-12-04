@@ -21,3 +21,7 @@ then create a .fasta file from the .gfa file
 ```
 awk '/^S/{print ">"$2"\n"$3}' miniasm.gfa > miniasm.fasta
 ```
+check how any contigs are there:
+```
+grep '>' miniasm.fasta | wc -l
+```
